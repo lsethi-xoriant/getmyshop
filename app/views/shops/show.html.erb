@@ -1,69 +1,68 @@
-<header>
-  <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a></div>
-  <ul id="nav-mobile" class="side-nav fixed">
-    <li class="bold">
-      <a href="about.html" class="waves-effect waves-teal">
-        <i class="material-icons">dashboard</i>
-      <span class="title">Dashboard</span>
-      </a>
-    </li>
+<%= render layout: "dashboard_layout" do %>
+<div class="dashboard-body">
+  <div class="row">
+    <div class="getting-started-cont">
+      <i class="left material-icons">info_outline</i>
+      <h4 class="left">Getting Started</h4>
+    </div>
+  </div>
+  <div class="row main-content-body">
+    <div class="welcome-note-cont btm-divider">
+      <p class="">Welcome to GetMyShop <%= current_shop_owner.first_name %>! Follow these 4 Simple steps to launch your store</p>
+    </div>
 
-    <li class="bold active">
-      <a href="getting-started.html" class="waves-effect waves-teal">
-        <i class="material-icons">folder</i>
-        <span class="title">Products</span>
-      </a>
-    </li>
-
-    <li class="bold">
-      <a href="getting-started.html" class="waves-effect waves-teal">
-        <i class="material-icons">insert_chart</i>
-        <span class="title">Orders</span>
-      </a>
-    </li>
-
-    <li class="bold">
-      <a href="http://materializecss.com/mobile.html" class="waves-effect waves-teal">
-        <i class="material-icons">play_arrow</i>
-        <span class="title">Coupons</span>
-      </a>
-    </li>
-
-    <li class="bold">
-      <a href="http://materializecss.com/mobile.html" class="waves-effect waves-teal">
-        <i class="material-icons">payment</i>
-        <span class="title">Transactions</span>
-      </a>
-    </li>
-
-    <li class="bold">
-      <a href="showcase.html" class="waves-effect waves-teal">
-        <i class="material-icons">supervisor_account</i>
-        <span class="title">Customers</span>
-      </a>
-    </li>
-  </ul>
-</header>
-<main>
-  <%= render partial: 'shop_owners_header' %>
-
-  <div class="container vspacer">
-    <div class="col s9">
-      <div class="profile">
-        <div class="result-header">
-          NO PRODUCTS IN STORE
-        </div>
-        <div class="row profile-fields">
-          <div class="no-order-msg center">
-            <p>You currently have no products</p>
-            <a class="modal-trigger waves-effect waves-teal btn-flat" href="#modal1">Add Products</a>
+    <div class="row btm-divider">
+      
+      <div class="steps">
+        <p class="left">1</p>
+        <div class="left steps-description">
+          <div class="steps-title">
+            <a href="#">Add your products</a>
+          </div>
+          <div class="steps-detail">Add product and upload their pictures from the <a href="#">Products section.</a>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="row btm-divider">
+      
+      <div class="steps">
+        <p class="left">2</p>
+        <div class="left steps-description">
+          <div class="steps-title">
+            <a href="#">Set up delivery rates</a>
+          </div>
+          <div class="steps-detail">You can setup your delivery charges from the <a href="#">Orders</a> section.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row btm-divider">
+      
+      <div class="steps">
+        <p class="left">3</p>
+        <div class="left steps-description">
+          <div class="steps-title">
+            <a href="#">Set up payment methods</a>
+          </div>
+          <div class="steps-detail"><a href="#">Activate</a> the payment options you want to accept on your store.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row btm-divider">
+      
+      <div class="steps">
+        <p class="left">4</p>
+        <div class="left steps-description">
+          <div class="steps-title">
+            <a href="#">Go live and start accepting orders</a>
+          </div>
+          <div class="steps-detail"><a href="#">View your shop.</a> You can start accepting orders immediately.</div>
+        </div>
+      </div>
+    </div>
   </div>
-  <%= render partial: 'products/form' %>
-  <%= render partial: 'shop_owners_footer' %>
-</main>
-
-
+</div>
+<% end %>
