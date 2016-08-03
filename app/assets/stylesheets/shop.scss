@@ -233,9 +233,22 @@ a > h3 {
   border-bottom: 1px solid $divider-color;
 }
 
-.dashboard-body {
+.steps-title {
   a {
     color: $primary-text-color;
+    font-weight: bold;
+  }
+  a:hover { 
+    text-decoration: underline;
+  }
+}
+
+.steps-detail {
+  a {
+    color: $secondary-text-color;
+  }
+  a:hover { 
+    text-decoration: underline;
   }
 }
 
