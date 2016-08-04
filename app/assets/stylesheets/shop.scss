@@ -235,10 +235,11 @@ a > h3 {
 
 .steps-title {
   a {
-    color: $primary-text-color;
+    color: $primary-color-dark;
     font-weight: bold;
   }
-  a:hover { 
+  
+  a:hover {
     text-decoration: underline;
   }
 }
@@ -247,8 +248,8 @@ a > h3 {
   a {
     color: $secondary-text-color;
   }
-  a:hover { 
+
+  a:hover {
     text-decoration: underline;
   }
 }
-
