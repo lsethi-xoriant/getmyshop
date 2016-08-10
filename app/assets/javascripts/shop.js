@@ -65,7 +65,7 @@ function deleteProduct(){
     success: function(data){
       var product_id = "#product"+document.productIndex
       $(product_id).remove();
-      Materialize.toast('Deleted Succesfully!', 4000)
+      Materialize.toast('Product Deleted', 4000)
     },
     error: function(data){
       Materialize.toast("Error deleting product", 4000)
